@@ -37,7 +37,6 @@ jobs:
         run: |
           sudo apt update
           sudo apt install pandoc
-          sudo apt install pdflatex
           pandoc lab1.md -o lab1.docx
           zip --junk-paths lab1 lab1.docx lab1.md
           
